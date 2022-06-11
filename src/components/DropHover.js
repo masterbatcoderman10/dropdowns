@@ -10,6 +10,8 @@ const hoverVariants = {
 
 
 
+
+
 const DropHover = () => {
 
     const [visible, setVisible] = useState(false);
@@ -21,13 +23,19 @@ const DropHover = () => {
     return (
         <div className="grid-item-3">
             <div className="container">
-            <motion.button className='btn' onHoverStart={makeVisible} onHoverEnd={makeVisible}>Click Me</motion.button>
-            <ul className={visible ? "droplist" : "droplist hidden"}>
+            <motion.button className='btn' 
+                onHoverStart={() => setVisible(true)} 
+                onBlur={() => setVisible(false)}>
+                    Click Me
+            </motion.button>
+            <motion.ul 
+                className={visible ? "droplist" : "droplist hidden"}
+                >
                 <motion.li variants={hoverVariants} whileHover="hover">Lorem</motion.li>
                 <motion.li variants={hoverVariants} whileHover="hover">Ipsum</motion.li>
                 <motion.li variants={hoverVariants} whileHover="hover">Lorem</motion.li>
                 <motion.li variants={hoverVariants} whileHover="hover">Ipsum</motion.li>
-            </ul>
+            </motion.ul>
             </div>
         
         </div>

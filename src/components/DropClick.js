@@ -21,7 +21,7 @@ const DropClick = () => {
     return (
         <div className="grid-item-2">
             <div className="container">
-            <motion.button className='btn' onClick={makeVisible}>Click Me</motion.button>
+            <motion.button className='btn' onClick={makeVisible} onBlur={() => setVisible(false)}>Click Me</motion.button>
             <ul className={visible ? "droplist" : "droplist hidden"}>
                 <motion.li variants={hoverVariants} whileHover="hover">Lorem</motion.li>
                 <motion.li variants={hoverVariants} whileHover="hover">Ipsum</motion.li>

@@ -72,6 +72,11 @@ h1 {
     grid-column: 7 / 13;
     justify-content: center;
 }
+.grid-item-4 {
+    display: flex;
+    grid-column: 1 / 4;
+    justify-content: center;
+}
 
 .container {
     width: 200px;

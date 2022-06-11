@@ -3,6 +3,7 @@ import './App.css';
 import DropdownInit from './components/DropdownInit';
 import DropClick from './components/DropClick';
 import DropHover from './components/DropHover';
+import DropClickAni from './components/DropClickAni';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <DropdownInit></DropdownInit>
         <DropClick></DropClick>
         <DropHover/>
+        <DropClickAni/>
       </div>
     </>
   );
