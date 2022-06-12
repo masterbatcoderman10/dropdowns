@@ -4,6 +4,9 @@ import DropdownInit from './components/DropdownInit';
 import DropClick from './components/DropClick';
 import DropHover from './components/DropHover';
 import DropClickAni from './components/DropClickAni';
+import DropClickAniTwo from './components/DropClickAniTwo';
+import DropAbsolute from './components/DropAbsolute';
+import DropButtonAnimation from './components/DropButtonAnimation';
 
 
 function App() {
@@ -13,8 +16,12 @@ function App() {
       <div className="grid">
         <DropdownInit></DropdownInit>
         <DropClick></DropClick>
-        <DropHover/>
+        <DropAbsolute/>
+
         <DropClickAni/>
+        <DropClickAniTwo/>
+        <DropHover/>
+        <DropButtonAnimation/>        
       </div>
     </>
   );

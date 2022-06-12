@@ -41,6 +41,7 @@ h1 {
     align-items: flex-start;
     height: 150px;
     justify-content: space-around;
+    width: 100%;
 
 
 }
@@ -77,9 +78,25 @@ h1 {
     grid-column: 1 / 4;
     justify-content: center;
 }
+.grid-item-5 {
+    display: flex;
+    grid-column: 4 / 7;
+    justify-content: center;
+}
+.grid-item-6 {
+    display: flex;
+    grid-column: 7 / 13;
+    justify-content: center;
+}
+.grid-item-7 {
+    display: flex;
+    grid-column: 1 / 13;
+    justify-content: center;
+}
 
 .container {
     width: 200px;
+    position: relative;
 }
 
 .btn {
@@ -103,5 +120,35 @@ h1 {
 .hidden {
     display: none;
 }
+
+.abs {
+    position: absolute;
+    z-index: 1;
+}
+
+.btn-div {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background: rgb(165,241,238);
+    background: linear-gradient(14deg, #a5f1ee 2%, rgba(94,255,198,1) 100%);
+    color: #9329F0;
+}
+
+.txt {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+    flex: 2;
+}
+.icon {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+
 
 
