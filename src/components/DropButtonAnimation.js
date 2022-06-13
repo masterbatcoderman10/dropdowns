@@ -4,8 +4,8 @@ import {useState} from 'react'
 
 const hoverVariants = {
     hover: {
-        background: "rgb(165,241,238)",
-        background: "linear-gradient(14deg, rgb(167, 241, 239, 0.7) 2%, rgba(94,255,198,0.7) 100%)",
+        background: "rgb(227,165,241)",
+        background: "linear-gradient(14deg, rgba(227,165,241,0.7) 2%, rgba(94,255,198,0.7) 100%)",
         transition: {
             duration: 0.5
         }
@@ -79,7 +79,7 @@ const DropButtonAnimation = () => {
                 whileHover="hover">
                     <div className="txt">Click Me</div>
                     <div className="icon">
-                        <motion.i variants={chevVariants} animate={controls2} class="fa-solid fa-chevron-down"></motion.i>
+                        <motion.i variants={chevVariants} animate={controls2} className="fa-solid fa-chevron-down"></motion.i>
                     </div>
                 </motion.div>
             <motion.ul className="droplist abs" variants={listVariants} animate={controls}>
